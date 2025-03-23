@@ -1,0 +1,153 @@
+/* Education Section */
+.education-section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    background: linear-gradient(to bottom, #45114d, #1d1b37); /* Gradient background */
+    color: #333; /* Dark text color for better contrast */
+  }
+  
+  /* Education Title */
+  .education-section h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #c2cdd8; /* Light grayish-blue text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+  }
+  
+  /* Timeline Container */
+  .timeline {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Vertical Line */
+  .vertical-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #c2cdd8; /* Light grayish-blue line */
+    box-shadow: 0 0 10px rgba(194, 205, 216, 0.5); /* Add glow effect */
+  }
+  
+  /* Timeline Item */
+  .timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+  }
+  
+  /* Right Side (Masters) */
+  .timeline-item.right {
+    left: 50%; /* Position on the right side */
+    text-align: left;
+    margin-left: 60px;
+  }
+  
+  /* Left Side (Bachelors) */
+  .timeline-item.left {
+    left: 0; /* Position on the left side */
+    text-align: right;
+    margin-left: -90px;
+  }
+  
+  /* Timeline Content */
+  .timeline-content {
+    background-color: #2c3e50; /* Dark blue background */
+    padding: 20px;
+    height: 200px;
+    width: 400px;
+    border-radius: 15px; /* Curved edges */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3); /* Add shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .timeline-content:hover {
+    transform: translateY(-5px); /* Lift the box on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #c2cdd8; /* Light grayish-blue text color */
+  }
+  
+  .timeline-content p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #c2cdd8; /* Light grayish-blue text color */
+  }
+  
+  /* Remove the blue dot */
+  .timeline-item::before {
+    display: none; /* Remove the blue dot */
+  }
+  
+/* College Logos */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the logos horizontally */
+    width: 75px; 
+    height: 75px;
+    border-radius: 50%; /* Circular logos */
+    background-color: white; /* White background for logos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .logo img {
+    width: 80%; 
+    height: 80%;
+    border-radius: 20%; /* Circular logos */
+  }
+  
+  /* Position the Masters logo */
+  .masters-logo {
+    top: 20%; /* Adjust position as needed */
+  }
+  
+  /* Position the Bachelors logo */
+  .bachelors-logo {
+    top: 65%; /* Adjust position as needed */
+  }
+  
+  
+
+
+  /* Fade-in Animation */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Fade-in Animation with Delay */
+  .fade-in-delay {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s; /* Delay for the second box */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .timeline-item {
+      width: 100%; /* Full width on small screens */
+      left: 0 !important; /* Override left positioning */
+      text-align: left !important; /* Override text alignment */
+    }
+  
+    .vertical-line {
+      left: 20px; /* Adjust vertical line position for mobile */
+    }
+  }

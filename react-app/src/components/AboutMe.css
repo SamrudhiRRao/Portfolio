@@ -1,0 +1,144 @@
+/* About Me Section */
+.about-section {
+    padding-top: 80px; /* Add padding to prevent overlap with navbar */
+    min-height: 100vh; /* Ensure the section takes up the full viewport height */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 150px; */
+    background: linear-gradient(to bottom, #45114d, #1d1b37); /* Gradient background */
+    color: #c2cdd8; /* Light grayish-blue text color */
+  }
+  
+  /* About Me Title */
+  .about-section h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #c2cdd8; /* Light grayish-blue text color */
+  }
+  
+  /* Content Container */
+  .about-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Limit the width for better readability */
+  }
+  
+  /* Left Section (25%) - Photo and Social Links */
+  .left-section {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .profile-photo {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%; /* Circular photo */
+    object-fit: cover; /* Ensure the photo fits well */
+    object-position: cover; /* Adjust this to center the photo properly */
+    margin-bottom: 1.5rem;
+    border: 3px solid #c2cdd8; /* Light grayish-blue border */
+    margin-top: -50px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem; /* Space between buttons */
+  }
+  
+  .social-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #1e3a8a; /* Dark blue text color */
+    background-color: #c2cdd8; /* Light grayish-blue background */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-button:hover {
+    background-color: #1e3a8a; /* Dark blue background on hover */
+    color: #c2cdd8; /* Light grayish-blue text on hover */
+  }
+  
+  /* Right Section (75%) - Bullet Points */
+.right-section {
+    width: 75%;
+    padding: 20px;
+  }
+  
+  .right-section ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  .right-section li {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #c2cdd8; /* Light grayish-blue text color */
+    position: relative; /* Required for pseudo-element positioning */
+    padding-left: 30px; /* Space for the emoji */
+  }
+  
+  /* Different Emojis for Each Bullet Point */
+  .right-section li.emoji-star::before {
+    content: "🌟"; /* Star emoji */
+  }
+  
+  .right-section li.emoji-rocket::before {
+    content: "🚀"; /* Rocket emoji */
+  }
+  
+  .right-section li.emoji-bulb::before {
+    content: "💡"; /* Light bulb emoji */
+  }
+  
+  .right-section li.emoji-heart::before {
+    content: "❤️"; /* Heart emoji */
+  }
+  
+  .right-section li.emoji-globe::before {
+    content: "🌍"; /* Globe emoji */
+  }
+  
+  /* Common Styles for All Emojis */
+  .right-section li::before {
+    position: absolute; /* Position the emoji */
+    left: 0; /* Align the emoji to the left */
+    top: 0; /* Align the emoji to the top */
+    font-size: 1.2rem; /* Match the font size of the text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column; /* Stack sections vertically on small screens */
+      align-items: center;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%; /* Full width on small screens */
+      text-align: center;
+    }
+  
+    .right-section ul {
+      padding-left: 0; /* Remove padding for bullet points */
+    }
+  
+    .right-section li {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  
+    .social-links {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+      gap: 0.5rem;
+    }
+  }
+  

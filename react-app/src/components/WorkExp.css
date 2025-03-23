@@ -1,0 +1,122 @@
+/* Work Experience Section */
+.work-experience-section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px;
+    background: linear-gradient(to bottom, #1d1b37, #45114d); /* Gradient background */
+    color: #c2cdd8; /* Light grayish-blue text color */
+  }
+  
+  /* Work Experience Title */
+  .work-experience-section h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #c2cdd8; /* Light grayish-blue text color */
+  }
+  
+  /* Content Container */
+  .work-experience-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Limit the width for better readability */
+  }
+  
+  /* Left Section (25%) - Bold Bullet Points */
+  .left-section {
+    width: 30%;
+    padding: 20px;
+    margin-right: 20px;
+  }
+  
+  .left-section ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  .left-section li {
+    font-size: 1.2rem;
+    font-weight: bold; /* Bold text */
+    margin-bottom: 1.5rem;
+    color: #c2cdd8; /* Light grayish-blue text color */
+    cursor: pointer; /* Indicate clickable items */
+    transition: color 0.3s ease;
+  }
+  
+  .left-section li.active {
+    color: #3498db; /* Highlight selected item */
+  }
+  
+  .left-section li:hover {
+    color: #3498db; /* Change color on hover */
+  }
+  
+  /* Right Section (75%) - Detailed Information */
+  .right-section {
+    width: 75%;
+    padding: 20px;
+  }
+  
+  .right-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #c2cdd8; /* Light grayish-blue text color */
+  }
+  
+  .right-section ul {
+    list-style-type: none; /* Add bullet points */
+    padding-left: 20px; /* Add padding for bullet points */
+  }
+  
+  .right-section li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #c2cdd8; /* Light grayish-blue text color */
+    position: relative; /* Required for pseudo-element positioning */
+    padding-left: 30px; /* Space for the star emoji */
+  }
+  
+  .right-section li::before {
+    content: "🌟"; /* Use the star emoji */
+    position: absolute; /* Position the emoji */
+    left: 0; /* Align the emoji to the left */
+    top: 0; /* Align the emoji to the top */
+    font-size: 1.2rem; /* Match the font size of the text */
+  }
+  
+  .right-section strong {
+    color: #3498db; /* Highlight strong text */
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .work-experience-content {
+      flex-direction: column; /* Stack sections vertically on small screens */
+      align-items: center;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%; /* Full width on small screens */
+      text-align: center;
+    }
+  
+    .left-section li {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  
+    .right-section h3 {
+      font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+  
+    .right-section ul {
+      padding-left: 0; /* Remove padding for bullet points */
+      list-style-type: none; /* Remove bullet points on small screens */
+    }
+  
+    .right-section li {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  }
+  

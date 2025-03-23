@@ -1,0 +1,135 @@
+
+.skills-section {
+  padding: 70px;
+  background: linear-gradient(to bottom, #1d1b37, #45114d); /* Gradient background */
+  color: #c2cdd8; /* Light grayish-blue text color */
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #c2cdd8; /* Light grayish-blue text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+/* Skill Category */
+.skill-category {
+  margin-bottom: 2rem;
+  text-align: left; /* Left-align subheadings */
+  max-width: 1200px; /* Limit width for better readability */
+  margin: 0 auto; /* Center the category container */
+}
+
+.skill-category h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #c2cdd8; /* Light grayish-blue text color */
+  text-align: left; /* Ensure subheadings are left-aligned */
+}
+
+/* Skill Box */
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the skill items */
+  gap: 40px; /* Increase space between skill items */
+}
+
+/* Skill Item */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Add some padding */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.skill-item:hover {
+  transform: translateY(-5px); /* Lift the item on hover */
+}
+
+.skill-item img {
+  width: 120px; /* Increase logo size */
+  height: 120px;
+  margin-bottom: 15px; /* Increase space between logo and text */
+}
+
+.skill-item p {
+  font-size: 1.2rem; /* Increase text size */
+  color: #c2cdd8; /* Light grayish-blue text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skill-box {
+    gap: 20px; /* Reduce space between skill items on small screens */
+  }
+
+  .skill-item img {
+    width: 80px; /* Slightly smaller logos for mobile */
+    height: 80px;
+  }
+
+  .skill-item p {
+    font-size: 1rem; /* Smaller text for mobile */
+  }
+}
+
+  
+  /* Language Skills */
+.language-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between language items */
+    text-align: left; /* Left-align text */
+    margin-top: 1rem; /* Add some space above */
+  }
+  
+  .language-item {
+    background-color: #2c3e50; /* Dark blue background */
+    padding: 15px; /* Add padding */
+    border-radius: 10px; /* Curved edges */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3); /* Add shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .language-item:hover {
+    transform: translateY(-5px); /* Lift the box on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+  }
+  
+  .language-item strong {
+    color: #3498db; /* Highlight language name */
+    font-size: 1.1rem; /* Slightly larger text */
+  }
+  
+  .language-item p {
+    margin: 0; /* Remove default margin */
+    color: #c2cdd8; /* Light grayish-blue text color */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skill-box {
+      gap: 20px; /* Reduce space between skill items on small screens */
+    }
+  
+    .skill-item {
+      padding: 20px; /* Slightly smaller padding for mobile */
+      width: 120px; /* Adjust width for mobile */
+    }
+  
+    .skill-item img {
+      width: 50px; /* Slightly smaller logos for mobile */
+      height: 50px;
+    }
+  
+    .skill-item p {
+      font-size: 1rem; /* Smaller text for mobile */
+    }
+  
+    .language-skills p {
+      font-size: 1rem; /* Smaller text for mobile */
+    }
+  }

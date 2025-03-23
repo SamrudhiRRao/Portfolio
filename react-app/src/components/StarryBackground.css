@@ -1,0 +1,61 @@
+/* Starry Background */
+.starry-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000428, #004e92); /* Dark blue gradient */
+    overflow: hidden;
+  }
+  
+  /* Stars */
+  .star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 2s infinite ease-in-out;
+  }
+  
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+  
+  /* Moving Planets */
+  .planet {
+    position: absolute;
+    border-radius: 50%;
+    animation: float 10s infinite ease-in-out;
+  }
+  
+  .planet-1 {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ff7e5f, #feb47b); /* Orange gradient */
+    top: 20%;
+    left: 10%;
+    animation-duration: 12s;
+  }
+  
+  .planet-2 {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #12c2e9, #c471ed); /* Blue-purple gradient */
+    top: 50%;
+    left: 70%;
+    animation-duration: 15s;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }

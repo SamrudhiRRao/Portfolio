@@ -1,0 +1,58 @@
+/* Full-screen home page */
+.home-page {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    background: linear-gradient(to bottom, #1d1b37, #45114d);
+    background-image: url('./src/assets/design.gif');
+    /* background: linear-gradient(to bottom, #1e3a8a, #000); Light gray background */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent the GIF from repeating */
+    color: #c2cdd8; /* Dark blue text color */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Use a clean sans-serif font */
+  }
+  
+  /* Big sentence (h1) */
+  .home-page .start h1 {
+    font-size: 4rem; /* Large font size */
+    margin: 0; /* Remove default margin */
+    padding: 0 20px; /* Add some padding for smaller screens */
+    color: #c2cdd8; /* Dark blue text color */
+  }
+  
+  /* Typing animation (h3) */
+  .home-page h3 {
+    font-size: 2rem; /* Medium font size */
+    margin: 1rem 0 0; /* Add some space above the h3 */
+    padding: 0 20px; /* Add some padding for smaller screens */
+    color: #c2cdd8; /* Gray text color */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    border-right: 2px solid #2c3e50; /* Cursor effect */
+    animation: blink-caret 0.75s step-end infinite; /* Cursor blink animation */
+  }
+  
+  /* Cursor blink animation */
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #2c3e50;
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .home-page .start h1 {
+      font-size: 2.5rem; /* Smaller font size for mobile */
+    }
+  
+    .home-page h3 {
+      font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+  }
