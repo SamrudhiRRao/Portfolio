@@ -5,7 +5,7 @@ import Home from "./Home";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar-main">
       <div className="navbar-brand">
         <a href="/Home" style={{ textDecoration: "none" }}>
           MyApp
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
-          <Link
+            <Link
               to="contact" // ID of the Work Experience section
               smooth={true} // Enable smooth scrolling
               duration={50} // Scroll duration in milliseconds

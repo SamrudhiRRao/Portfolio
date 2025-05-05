@@ -1,9 +1,10 @@
 /* Navbar styles */
-.navbar {
+.navbar-main {
   position: fixed; /* Fix the navbar at the top */
   top: 0;
   left: 0;
   width: 100%;
+  height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
