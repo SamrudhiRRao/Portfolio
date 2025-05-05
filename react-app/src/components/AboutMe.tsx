@@ -12,7 +12,7 @@ const About: React.FC = () => {
         {/* Left Section (25%) - Photo and Social Links */}
         <div className="left-section">
           <img
-            src="../assets/Samrudhi_Photo.jpg" // Replace with the path to your photo
+            src="./src/assets/Samrudhi_Photo.jpg" // Replace with the path to your photo
             alt="Samrudhi Rao"
             className="profile-photo"
           />
