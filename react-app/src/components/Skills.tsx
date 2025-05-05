@@ -2,15 +2,15 @@ import React from "react";
 import "./Skills.css"; // Import the CSS file
 
 // Import logos (replace with your actual logo paths)
-import pythonLogo from "C:/Users/Samrudhi/Videos/Samrudhi/Portfolio/react-app/src/assets/SkillLogos/python.svg";
-import javaLogo from "C:/Users/Samrudhi/Videos/Samrudhi/Portfolio/react-app/src/assets/SkillLogos/java.svg";
-import javascriptLogo from "C:/Users/Samrudhi/Videos/Samrudhi/Portfolio/react-app/src/assets/SkillLogos/js.svg";
-import linuxLogo from "C:/Users/Samrudhi/Videos/Samrudhi/Portfolio/react-app/src/assets/SkillLogos/linux.webp";
-import windowsLogo from "C:/Users/Samrudhi/Videos/Samrudhi/Portfolio/react-app/src/assets/SkillLogos/windows.svg";
-import reactLogo from "C:/Users/Samrudhi/Videos/Samrudhi/Portfolio/react-app/src/assets/SkillLogos/React.png";
-import awsLogo from "C:/Users/Samrudhi/Videos/Samrudhi/Portfolio/react-app/src/assets/SkillLogos/AWS.png";
-import githubLogo from "C:/Users/Samrudhi/Videos/Samrudhi/Portfolio/react-app/src/assets/SkillLogos/github.png";
-import mongodbLogo from "C:/Users/Samrudhi/Videos/Samrudhi/Portfolio/react-app/src/assets/SkillLogos/mongodb.png";
+import pythonLogo from "../assets/SkillLogos/python.svg";
+import javaLogo from "../assets/SkillLogos/java.svg";
+import javascriptLogo from "../assets/SkillLogos/js.svg";
+import linuxLogo from "../assets/SkillLogos/linux.webp";
+import windowsLogo from "../assets/SkillLogos/windows.svg";
+import reactLogo from "../assets/SkillLogos/React.png";
+import awsLogo from "../assets/SkillLogos/AWS.png";
+import githubLogo from "../assets/SkillLogos/github.png";
+import mongodbLogo from "../assets/SkillLogos/mongodb.png";
 
 const Skills: React.FC = () => {
   return (
