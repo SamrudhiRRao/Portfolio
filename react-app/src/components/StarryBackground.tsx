@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, ReactNode } from 'react';
-import './StarryBackground.css'; // Import the CSS file
+import React, { useEffect, useRef, ReactNode } from "react";
+import "./StarryBackground.css"; // Import the CSS file
 
 // Define the props interface
 interface StarryBackgroundProps {
@@ -14,8 +14,8 @@ const StarryBackground: React.FC<StarryBackgroundProps> = ({ children }) => {
     const starryContainer = starryRef.current;
     if (starryContainer) {
       for (let i = 0; i < 100; i++) {
-        const star = document.createElement('div');
-        star.className = 'star';
+        const star = document.createElement("div");
+        star.className = "star";
         star.style.top = `${Math.random() * 100}%`;
         star.style.left = `${Math.random() * 100}%`;
         star.style.width = `${Math.random() * 3}px`;

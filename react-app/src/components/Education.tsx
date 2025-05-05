@@ -3,8 +3,8 @@ import { useInView } from "react-intersection-observer"; // Import useInView
 import "./Education.css"; // Import the CSS file
 
 // Import college logos
-import mastersLogo from "C:/Users/Samrudhi/Videos/Samrudhi/Portfolio/react-app/src/assets/logoPassau.svg";
-import bachelorsLogo from "C:/Users/Samrudhi/Videos/Samrudhi/Portfolio/react-app/src/assets/logoPesu.png";
+import mastersLogo from "../assets/logoPassau.svg";
+import bachelorsLogo from "../assets/logoPesu.png";
 
 const Education: React.FC = () => {
   // Use the useInView hook to detect when the Education section is in the viewport

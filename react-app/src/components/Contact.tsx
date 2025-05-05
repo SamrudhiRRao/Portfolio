@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css"; // Import the CSS file
-import contactImage from "C:/Users/Samrudhi/Videos/Samrudhi/Portfolio/react-app/src/assets/blob.gif"; // Import the image (replace with your image path)
+import contactImage from "../assets/blob.gif"; // Import the image (replace with your image path)
 
 const Contact: React.FC = () => {
   return (
